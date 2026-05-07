@@ -17,7 +17,7 @@ Indicar si hubo descuento o no.
 Mostrar el monto final a pagar.
 
 """
-destino = int(input("SELECCIONAR DESTINO: \n1.Cuzco (S/.325.72)\n2.Iquitos (S/.413.40)\n3.Trujillo (S/.200.00)\nElegir una opción: "))
+destino = int(input("SELECCIONAR DESTINO: \n1.Cusco (S/.325.72)\n2.Iquitos (S/.413.40)\n3.Trujillo (S/.200.00)\nElegir una opción: "))
 cant_pasajes = int(input("Ingrese cantidad de pasajes al mismo destino: "))
 
 match destino:
@@ -34,15 +34,15 @@ match destino:
         print("Selecciona Un Destino Disponible")
         costo = None
 if costo is None or cant_pasajes <= 0:
-    print("Datos Invalidos")
+    print("Datos Invalidos")     
 else:
-    total = costo * cant_pasajes
-    descuento = total * 0.10 if cant_pasajes >= 5 else 0
-    monto_pagar = total - descuento
+    precio_inicial = costo * cant_pasajes
+    descuento = precio_inicial * 0.10 if cant_pasajes >= 5 else 0
+    monto_pagar = precio_inicial - descuento
 
-    print(f"\nDestino elegido: {destino}")
-    print(f"Precio unitario: S/. {costo:.2f}")
-    print(f"Descuento aplicado: S/. {descuento:.2f}")
-    print(f"Monto final: S/. {monto_pagar:.2f}")
+print(f"\nDestino elegido: {nom_destino}")
+print(f"Precio unitario: S/. {costo:.2f}")
+print(f"Descuento aplicado: S/. {descuento:.2f}")
+print(f"Monto final: S/. {monto_pagar:.2f}")
 
 

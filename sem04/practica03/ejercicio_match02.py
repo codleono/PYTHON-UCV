@@ -54,7 +54,9 @@ else:
         descuento = 0
 
     # salida
-    print(f"\nPlato elegido: {plato}")
-    print(f"Precio unitario: S/. {precio:.2f}")
-    print(f"{promo}")
-    print(f"Monto final: S/. {total:.2f}")
+print("="*30)
+print(f"\nPlato elegido: {plato}")
+print(f"Precio unitario: S/. {precio:.2f}")
+print(f"{promo}")
+print(f"Descuento aplicado: S/. {descuento:.2f}")
+print(f"Monto final: S/. {total:.2f}")

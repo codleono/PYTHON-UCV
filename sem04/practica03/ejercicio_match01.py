@@ -40,6 +40,7 @@ else:
     descuento = precio_inicial * 0.10 if cant_pasajes >= 5 else 0
     monto_pagar = precio_inicial - descuento
 
+print("="*30)
 print(f"\nDestino elegido: {nom_destino}")
 print(f"Precio unitario: S/. {costo:.2f}")
 print(f"Descuento aplicado: S/. {descuento:.2f}")
